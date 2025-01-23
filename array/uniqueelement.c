@@ -1,12 +1,13 @@
 #include<stdio.h>
 #include<stdbool.h>
 int main(){
-    int arr[7] = {1,2,3,4,1,2,4};
+    int arr[7] = {1,2,4,4,1,2,3};
     for(int i=0; i<7; i++){
         bool flag = false;
-        for(int j=i+1; j<7; j++){
-            if(arr[i]==arr[j]){
+        for(int j=0; j<7; j++){
+            if(i!=j && arr[i]==arr[j]){
                 flag = true;
+                break;
             }
         }
         if(flag==false){
