@@ -21,15 +21,15 @@ int main(){
         }
     }
 
-    for(int i=0; i<n; i++){
-        for(int j=0,k=n-1; j<n,k>=0; j++,k--){
-            if(j<k){
-                int temp = arr[i][j];
-                arr[i][j] = arr[i][k];
-                arr[i][k] = temp;
-            }
-        }
-    }
+    // for(int i=0; i<n; i++){
+    //     for(int j=0,k=n-1; j<n,k>=0; j++,k--){
+    //         if(j<k){
+    //             int temp = arr[i][j];
+    //             arr[i][j] = arr[i][k];
+    //             arr[i][k] = temp;
+    //         }
+    //     }
+    // }
     printf("\n");
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
